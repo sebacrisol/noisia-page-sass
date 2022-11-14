@@ -1,0 +1,31 @@
+@use "variables";
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: variables.$fuenteprincipal;
+    color: white;
+}
+
+#body-grid {
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.black {
+    color: rgba(0, 0, 0, 0.66);
+}
+
+
+

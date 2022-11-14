@@ -1,0 +1,27 @@
+@use "variables";
+
+
+.footer {
+    text-align: center;
+    margin-top: 15px;
+
+    .footer-grid {
+        padding: 10px;
+        list-style: none;
+        
+        .footer__style { 
+            text-decoration: none;
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.538);
+
+            &:hover {
+                color: rgb(81, 83, 160);
+            }
+        }
+    }
+}
+
+#footer__nav__ul {
+    padding: 0px;
+}
+

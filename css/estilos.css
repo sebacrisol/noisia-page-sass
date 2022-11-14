@@ -1,0 +1,594 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+
+#body-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.black {
+  color: rgba(0, 0, 0, 0.66);
+}
+
+.nav-logo {
+  width: 150px;
+  margin: 20px;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+}
+.nav-bar .ul-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  column-gap: 50px;
+  row-gap: 10px;
+  padding-left: 0px;
+}
+.nav-bar .ul-grid .nav-section {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: normal;
+}
+.nav-bar .ul-grid li {
+  margin: 2px;
+  display: inline-block;
+}
+.nav-bar .ul-grid li a:hover {
+  color: rgb(81, 83, 160);
+}
+
+/* SECCION INDEX MAIN MOBILE*/
+.main {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  justify-content: center;
+}
+
+.main-img {
+  width: 300px;
+}
+
+.closer {
+  width: 200px;
+  justify-self: center;
+}
+
+.main-img-tracklist {
+  width: 300px;
+  display: none;
+}
+
+.subtitle {
+  font-weight: normal;
+  margin: 35px;
+  text-align: center;
+}
+
+.info-text {
+  font-size: 20px;
+  margin: 25px;
+}
+
+.iframe-youtube {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.iframe-soundcloud {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.iframe-apple {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.iframe-spotify {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* SECCION MUSICA MOBILE */
+.title-discography {
+  margin: 60px 0px 30px 0px;
+}
+
+/*Card */
+.card {
+  width: 250px;
+  height: 250px;
+  margin: 80px 0px 80px 0px;
+  background: #000000;
+  position: relative;
+  box-shadow: 0px 2px 5px rgba(35, 35, 35, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  background-color: black;
+}
+
+/*Image*/
+.card-img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: transform 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.closer {
+  background-image: url(../imagenes/cards/closer-card.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.outer-edges {
+  background-image: url(../imagenes/cards/outer-edges.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.split-the-atom {
+  background-image: url(../imagenes/cards/R-2222640-1659474983-9750.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.i-am-legion {
+  background-image: url(../imagenes/cards/i-am-legion.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.the-resonance-iv {
+  background-image: url(../imagenes/cards/the-resonance-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.the-resonance-iii {
+  background-image: url(../imagenes/cards/the-resonance-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.the-resonance-ii {
+  background-image: url(../imagenes/cards/the-resonance-2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.the-resonance-i {
+  background-image: url(../imagenes/cards/the-resonance-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.outer-edges-noisia-remixes {
+  background-image: url(../imagenes/cards/outer-edges-noisia-remixes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.outer-edges-remixes {
+  background-image: url(../imagenes/cards/outer-edges-remixes.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dead-limit {
+  background-image: url(../imagenes/cards/dead-limit.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.purpose {
+  background-image: url(../imagenes/cards/purpose.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*Buttons*/
+.social-media {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1rem;
+  transform: translateY(-200%);
+  z-index: 2;
+  background: none;
+}
+
+.social-media li {
+  background: none;
+  padding: 10px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+}
+
+.social-media a {
+  font-size: 25px;
+  color: white;
+}
+
+.card a {
+  filter: brightness(100%) !important;
+}
+
+.icon {
+  font-size: 25px;
+}
+
+/*Text*/
+.title {
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.subtitle {
+  letter-spacing: 1px;
+  font-size: 0.9em;
+}
+
+ul {
+  list-style: none;
+}
+
+svg {
+  --size: 25px;
+  width: var(--size);
+  height: var(--size);
+  fill: #252525;
+}
+
+/* Hover */
+.social-media a:hover {
+  color: rgb(110, 110, 110);
+}
+
+.card-img li {
+  transition: all 0.8s ease;
+}
+
+.card-img:hover {
+  transition: all 0.8s ease;
+  filter: brightness(30%);
+}
+
+.social-media:hover .card-img {
+  transition: all 0.8s ease;
+  filter: brightness(30%);
+}
+
+.card:hover {
+  box-shadow: 1px 2px 10px rgba(35, 35, 35, 0.5);
+}
+
+.card:hover .card-img {
+  transform: translateY(-30%);
+}
+
+.card:hover .social-media li {
+  transform: translateY(-5%);
+  opacity: 1;
+}
+
+.card:hover .social-media li:nth-child(1) {
+  transition-delay: 0s;
+}
+
+.card:hover .social-media li:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.card:hover .social-media li:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+/* SECCION RADIO MOBILE */
+.radio-vid {
+  margin-top: 30px;
+}
+
+.radio-div {
+  width: 295px;
+}
+
+.vision-update {
+  font-size: 17px;
+}
+
+.vision-iframe {
+  width: 300px;
+  height: 300px;
+}
+
+.radio-img {
+  width: 300px;
+  height: 300px;
+}
+
+/* SECCION ABOUT US MOBILE */
+.biography {
+  margin: 40px 40px 0px 40px;
+}
+
+.biography p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+@media (min-width: 768px) {
+  .sticky {
+    position: sticky;
+    top: 0%;
+    z-index: 3;
+    top: 0px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 50px 30px rgb(0, 0, 0);
+  }
+  .ul-grid {
+    display: flex;
+  }
+  .ul-grid .nav-section {
+    font-size: 25px;
+  }
+  /* main desktop */
+  .main-img {
+    width: 700px;
+  }
+  .main-img .main-img-tracklist {
+    width: 700px;
+    display: block;
+  }
+  .main-text-article {
+    display: flex;
+    justify-content: center;
+  }
+  .main-text-article .main-text {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 20px;
+    margin: 20px;
+  }
+  .main-iframes .iframe-youtube {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .main-iframes .iframe-soundcloud {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .main-iframes .iframe-apple {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .main-iframes .iframe-spotify {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .platforms {
+    display: inline-block;
+  }
+  .cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+  .card {
+    width: 250px;
+    height: 250px;
+    margin: 68px;
+    background: #000000;
+    position: relative;
+    box-shadow: 0px 2px 5px rgba(35, 35, 35, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  /* seccion radio desktop */
+  .radio-img {
+    width: 500px;
+    height: auto;
+  }
+  .radio-div {
+    width: 600px;
+  }
+  .update-title-div {
+    width: 1000px;
+  }
+  .vision-update {
+    font-size: 25px;
+  }
+  .update {
+    font-family: "Roboto", sans-serif;
+    font-size: 23px;
+    font-weight: 100;
+    margin-top: 40px;
+    width: 600px;
+  }
+  .vision-iframe {
+    width: 600px;
+    height: 500px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+  }
+  .vision {
+    width: 30%;
+  }
+  /* botones radio */
+  .wrapper {
+    display: inline-flex;
+    list-style: none;
+    height: 120px;
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 0;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .wrapper .icon {
+    position: relative;
+    background: #fff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .tooltip:before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper .spotify:hover,
+  .wrapper .spotify:hover .tooltip,
+  .wrapper .spotify:hover .tooltip::before {
+    background: #1DB954;
+    color: #fff;
+  }
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before {
+    background: #ff7700;
+    color: #fff;
+  }
+  .wrapper .youtube:hover,
+  .wrapper .youtube:hover .tooltip,
+  .wrapper .youtube:hover .tooltip::before {
+    background: #FF0000;
+    color: #fff;
+  }
+  /* seccion about us desktop */
+  .carrousel-tamanio {
+    margin-top: 10px;
+    width: 700px;
+    height: 500px;
+  }
+  .biography {
+    margin: 40px;
+    width: 700px;
+  }
+  .biography p {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px;
+  }
+  /* seccion contact desktop */
+  .div-formulario {
+    width: 500px;
+    margin-top: 60px;
+    margin-bottom: 160px;
+  }
+  /* footer desktop */
+  .footer-grid {
+    text-align: center;
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-auto-rows: auto;
+    column-gap: 25px;
+    justify-content: center;
+  }
+  .footer__style {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.538);
+  }
+}
+.footer {
+  text-align: center;
+  margin-top: 15px;
+}
+.footer .footer-grid {
+  padding: 10px;
+  list-style: none;
+}
+.footer .footer-grid .footer__style {
+  text-decoration: none;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.538);
+}
+.footer .footer-grid .footer__style:hover {
+  color: rgb(81, 83, 160);
+}
+
+#footer__nav__ul {
+  padding: 0px;
+}
+
+/*# sourceMappingURL=estilos.css.map */
