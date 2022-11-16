@@ -34,10 +34,6 @@ body {
   display: flex;
   flex-direction: row;
 }
-.nav-bar .header-li {
-  width: 100px;
-  padding: 0px;
-}
 .nav-bar .nav-section {
   color: white;
   font-size: 20px;
@@ -85,29 +81,11 @@ body {
   margin: 25px;
 }
 
-.iframe-youtube {
+.main-iframes .iframe-spotify, .main-iframes .iframe-apple, .main-iframes .iframe-soundcloud, .main-iframes .iframe-youtube {
   display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-
-.iframe-soundcloud {
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.iframe-apple {
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.iframe-spotify {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
 /* SECCION MUSICA MOBILE */
 .title-discography {
   margin: 60px 0px 30px 0px;
@@ -143,73 +121,73 @@ body {
 }
 
 .closer {
-  background-image: url(../imagenes/cards/closer-card.jpg);
+  background-image: url(/imagenes/cards/closer-card.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .outer-edges {
-  background-image: url(../imagenes/cards/outer-edges.jpg);
+  background-image: url(/imagenes/cards/outer-edges.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .split-the-atom {
-  background-image: url(../imagenes/cards/R-2222640-1659474983-9750.jpg);
+  background-image: url(/imagenes/cards/R-2222640-1659474983-9750.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .i-am-legion {
-  background-image: url(../imagenes/cards/i-am-legion.jpg);
+  background-image: url(/imagenes/cards/i-am-legion.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .the-resonance-iv {
-  background-image: url(../imagenes/cards/the-resonance-4.jpg);
+  background-image: url(/imagenes/cards/the-resonance-4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .the-resonance-iii {
-  background-image: url(../imagenes/cards/the-resonance-3.jpg);
+  background-image: url(/imagenes/cards/the-resonance-3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .the-resonance-ii {
-  background-image: url(../imagenes/cards/the-resonance-2.jpg);
+  background-image: url(/imagenes/cards/the-resonance-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .the-resonance-i {
-  background-image: url(../imagenes/cards/the-resonance-1.jpg);
+  background-image: url(/imagenes/cards/the-resonance-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .outer-edges-noisia-remixes {
-  background-image: url(../imagenes/cards/outer-edges-noisia-remixes.jpg);
+  background-image: url(/imagenes/cards/outer-edges-noisia-remixes.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .outer-edges-remixes {
-  background-image: url(../imagenes/cards/outer-edges-remixes.jpg);
+  background-image: url(/imagenes/cards/outer-edges-remixes.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .dead-limit {
-  background-image: url(../imagenes/cards/dead-limit.jpg);
+  background-image: url(/imagenes/cards/dead-limit.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .purpose {
-  background-image: url(../imagenes/cards/purpose.jpg);
+  background-image: url(/imagenes/cards/purpose.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -361,11 +339,16 @@ svg {
   .ul-grid .nav-section {
     font-size: 25px;
   }
+  .header-li {
+    width: 100px;
+    padding: 0px;
+    margin-right: 0px;
+  }
   /* main desktop */
   .main-img {
     width: 700px;
   }
-  .main-img .main-img-tracklist {
+  .main-img-tracklist {
     width: 700px;
     display: block;
   }
@@ -381,24 +364,8 @@ svg {
     font-size: 20px;
     margin: 20px;
   }
-  .main-iframes .iframe-youtube {
-    display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .main-iframes .iframe-soundcloud {
-    display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .main-iframes .iframe-apple {
-    display: flex;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .main-iframes .iframe-spotify {
-    margin-top: 50px;
-    margin-bottom: 50px;
+  ul {
+    padding-left: 0px;
   }
   .platforms {
     display: inline-block;

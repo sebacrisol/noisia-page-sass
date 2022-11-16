@@ -19,17 +19,22 @@
     }
 }
 
+.header-li {
+    width: 100px;
+    padding: 0px;
+    margin-right: 0px;
+}
+
 
 /* main desktop */
 
 .main-img {
     width: 700px;
+}
 
-    .main-img-tracklist {
-        width: 700px;
-        display: block;
-    
-    }
+.main-img-tracklist {
+    width: 700px;
+    display:block;
 }
 
 
@@ -47,33 +52,9 @@
     }
 }
 
-.main-iframes {
-
-    .iframe-youtube {
-        display: flex;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        
-    }
-    
-    .iframe-soundcloud{
-        display: flex;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    
-    .iframe-apple {
-        display: flex;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-    
-    .iframe-spotify {
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
+ul {
+    padding-left: 0px;
 }
-
 
 .platforms {
     display: inline-block;

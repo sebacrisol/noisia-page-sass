@@ -34,28 +34,30 @@
     margin: 25px;
 }
 
-.iframe-youtube {
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px;
+.main-iframes {
+
+    %medida-iframe  {         
+        display: flex;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .iframe-youtube {
+        @extend %medida-iframe;
+        
+    }
     
-}
-
-.iframe-soundcloud{
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.iframe-apple {
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.iframe-spotify {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    .iframe-soundcloud{
+        @extend %medida-iframe;
+    }
+    
+    .iframe-apple {
+        @extend %medida-iframe;
+    }
+    
+    .iframe-spotify {
+        @extend %medida-iframe;
+    }
 }
 
 /* SECCION MUSICA MOBILE */
@@ -98,76 +100,60 @@
     z-index: 2;
 }
 
-.closer {
-    background-image: url(../imagenes/cards/closer-card.jpg);
+@mixin card-background($fondo) {
+    background-image: $fondo;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.closer {
+    
+    @include card-background(url(/imagenes/cards/closer-card.jpg))
 }
 
 .outer-edges {
-    background-image: url(../imagenes/cards/outer-edges.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+
+    @include card-background(url(/imagenes/cards/outer-edges.jpg))
 }
 
 .split-the-atom {
-    background-image: url(../imagenes/cards/R-2222640-1659474983-9750.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include card-background(url(/imagenes/cards/R-2222640-1659474983-9750.jpg))
 }
 
 .i-am-legion {
-    background-image: url(../imagenes/cards/i-am-legion.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include card-background(url(/imagenes/cards/i-am-legion.jpg))
 }
 
 .the-resonance-iv {
-    background-image: url(../imagenes/cards/the-resonance-4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;    
+    @include card-background(url(/imagenes/cards/the-resonance-4.jpg))
 }
 
 .the-resonance-iii {
-    background-image: url(../imagenes/cards/the-resonance-3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;    
+    @include card-background(url(/imagenes/cards/the-resonance-3.jpg))
 }
 
 .the-resonance-ii {
-    background-image: url(../imagenes/cards/the-resonance-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;    
+    @include card-background(url(/imagenes/cards/the-resonance-2.jpg))
 }
 
 .the-resonance-i {
-    background-image: url(../imagenes/cards/the-resonance-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;    
+    @include card-background(url(/imagenes/cards/the-resonance-1.jpg))   
 }
 
 .outer-edges-noisia-remixes {
-    background-image: url(../imagenes/cards/outer-edges-noisia-remixes.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include card-background(url(/imagenes/cards/outer-edges-noisia-remixes.jpg))
 }
 
 .outer-edges-remixes {
-    background-image: url(../imagenes/cards/outer-edges-remixes.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include card-background(url(/imagenes/cards/outer-edges-remixes.jpg))
 }
 
 .dead-limit {
-    background-image: url(../imagenes/cards/dead-limit.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;    
+    @include card-background(url(/imagenes/cards/dead-limit.jpg))
 }
 
 .purpose {
-    background-image: url(../imagenes/cards/purpose.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;    
+    @include card-background(url(/imagenes/cards/purpose.jpg))
 }
 
     /*Buttons*/
