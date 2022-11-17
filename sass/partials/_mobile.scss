@@ -106,54 +106,56 @@
     background-repeat: no-repeat;
 }
 
+
+
 .closer {
     
-    @include card-background(url(/imagenes/cards/closer-card.jpg))
+    @include card-background(url(../imagenes/cards/closer-card.jpg))
 }
 
 .outer-edges {
 
-    @include card-background(url(/imagenes/cards/outer-edges.jpg))
+    @include card-background(url(../imagenes/cards/outer-edges.jpg))
 }
 
 .split-the-atom {
-    @include card-background(url(/imagenes/cards/R-2222640-1659474983-9750.jpg))
+    @include card-background(url(../imagenes/cards/R-2222640-1659474983-9750.jpg))
 }
 
 .i-am-legion {
-    @include card-background(url(/imagenes/cards/i-am-legion.jpg))
+    @include card-background(url(../imagenes/cards/i-am-legion.jpg))
 }
 
 .the-resonance-iv {
-    @include card-background(url(/imagenes/cards/the-resonance-4.jpg))
+    @include card-background(url(../imagenes/cards/the-resonance-4.jpg))
 }
 
 .the-resonance-iii {
-    @include card-background(url(/imagenes/cards/the-resonance-3.jpg))
+    @include card-background(url(../imagenes/cards/the-resonance-3.jpg))
 }
 
 .the-resonance-ii {
-    @include card-background(url(/imagenes/cards/the-resonance-2.jpg))
+    @include card-background(url(../imagenes/cards/the-resonance-2.jpg))
 }
 
 .the-resonance-i {
-    @include card-background(url(/imagenes/cards/the-resonance-1.jpg))   
+    @include card-background(url(../imagenes/cards/the-resonance-1.jpg))   
 }
 
 .outer-edges-noisia-remixes {
-    @include card-background(url(/imagenes/cards/outer-edges-noisia-remixes.jpg))
+    @include card-background(url(../imagenes/cards/outer-edges-noisia-remixes.jpg))
 }
 
 .outer-edges-remixes {
-    @include card-background(url(/imagenes/cards/outer-edges-remixes.jpg))
+    @include card-background(url(../imagenes/cards/outer-edges-remixes.jpg))
 }
 
 .dead-limit {
-    @include card-background(url(/imagenes/cards/dead-limit.jpg))
+    @include card-background(url(../imagenes/cards/dead-limit.jpg))
 }
 
 .purpose {
-    @include card-background(url(/imagenes/cards/purpose.jpg))
+    @include card-background(url(../imagenes/cards/purpose.jpg))
 }
 
     /*Buttons*/

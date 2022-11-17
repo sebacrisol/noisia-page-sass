@@ -121,73 +121,73 @@ body {
 }
 
 .closer {
-  background-image: url(/imagenes/cards/closer-card.jpg);
+  background-image: url(../imagenes/cards/closer-card.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .outer-edges {
-  background-image: url(/imagenes/cards/outer-edges.jpg);
+  background-image: url(../imagenes/cards/outer-edges.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .split-the-atom {
-  background-image: url(/imagenes/cards/R-2222640-1659474983-9750.jpg);
+  background-image: url(../imagenes/cards/R-2222640-1659474983-9750.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .i-am-legion {
-  background-image: url(/imagenes/cards/i-am-legion.jpg);
+  background-image: url(../imagenes/cards/i-am-legion.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .the-resonance-iv {
-  background-image: url(/imagenes/cards/the-resonance-4.jpg);
+  background-image: url(../imagenes/cards/the-resonance-4.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .the-resonance-iii {
-  background-image: url(/imagenes/cards/the-resonance-3.jpg);
+  background-image: url(../imagenes/cards/the-resonance-3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .the-resonance-ii {
-  background-image: url(/imagenes/cards/the-resonance-2.jpg);
+  background-image: url(../imagenes/cards/the-resonance-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .the-resonance-i {
-  background-image: url(/imagenes/cards/the-resonance-1.jpg);
+  background-image: url(../imagenes/cards/the-resonance-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .outer-edges-noisia-remixes {
-  background-image: url(/imagenes/cards/outer-edges-noisia-remixes.jpg);
+  background-image: url(../imagenes/cards/outer-edges-noisia-remixes.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .outer-edges-remixes {
-  background-image: url(/imagenes/cards/outer-edges-remixes.jpg);
+  background-image: url(../imagenes/cards/outer-edges-remixes.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .dead-limit {
-  background-image: url(/imagenes/cards/dead-limit.jpg);
+  background-image: url(../imagenes/cards/dead-limit.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .purpose {
-  background-image: url(/imagenes/cards/purpose.jpg);
+  background-image: url(../imagenes/cards/purpose.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
